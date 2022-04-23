@@ -8,7 +8,7 @@ router.use(express.static("public"));
 //get route--------------------------------------------------------------------------------------------------
 router.get("/",function(req,res){
     if(req.cookies.doctorlogin)
-    res.render("doctorHome",{email:req.cookies.doctorlogin});
+    res.render("doctorhome",{email:req.cookies.doctorlogin});
     else
     res.redirect("/login");
 });
