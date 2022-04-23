@@ -17,9 +17,16 @@ router.get("/docprofile",function(req,res){
     console.log(doc_id);
     Doctor.findOne({_id:doc_id},function (err, data){
         Patientlist.findOne({doctor_id:doc_id},function(err,currdata){
-            console.log(data);
-            console.log(currdata);
+            if(currdata)
             res.render("doctorprofile.ejs",{data:data,currdata:currdata,myid:req.cookies.userlogin});
+            else
+            {
+                const parse ={
+                    CurrentNum : 1,
+                    TotalNum : 1
+                };
+                res.render("doctorprofile.ejs",{data:data,currdata:parse,myid:req.cookies.userlogin});
+            }
         });
     });
 });
