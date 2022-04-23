@@ -8,7 +8,7 @@ function changeDiv (){
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('POST','https://intense-mesa-20462.herokuapp.com/api/currNum',true);
+    xhr.open('POST','http://intense-mesa-20462.herokuapp.com/api/currNum',true);
 
     xhr.setRequestHeader('Content-type','application/json');
 
