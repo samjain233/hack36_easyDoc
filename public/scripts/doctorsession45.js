@@ -24,7 +24,7 @@ $("#time").click(function(){
 
   const xhr = new XMLHttpRequest();
 
-    xhr.open('POST','http://localhost:3000/api/time',true);
+    xhr.open('POST','https://intense-mesa-20462.herokuapp.com/api/time',true);
 
     xhr.setRequestHeader('Content-type','application/json');
 
