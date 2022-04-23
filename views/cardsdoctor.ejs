@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cardsdoctor34.css">
+    <title>cards</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="#"><%=email%></a>
+         
+        </div>
+        <ul>
+            <li><a href="/user">Home</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Prescriptions</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+     
+    <div class="main">
+        <% render.forEach(function(item){ %>
+        <div class="cards">
+            <div class="image">
+                <img src="./images/cardslogo23.jpg" alt="logo">
+            </div>
+            <div class="title">
+                <h1><%=item.name%></h1>
+            </div>
+            <div class="des">
+                <p>SPECIALITY: <%=item.speciality%></p>
+                <p>TIMINGS: <%=item.timings%></p>
+                <form method="post" action="/User/docsearch">
+                <button type="submit" name="doc_id" value="<%=item.id%>">Open Profile</button>
+                </form>
+            </div>
+    
+        </div>
+        <% }); %>
+    </div>
+    
+    
+    
+</body>
+</html>

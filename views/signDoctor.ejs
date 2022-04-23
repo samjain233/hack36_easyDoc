@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/signdoctor23.css">
+</head>
+
+<body>
+    <div>
+        <img class="bgimg" src="images/doctorSignUp.png" alt=""><br><br><br><br><br><br><br>
+    </div>
+    <div class="signupFrm">
+        <form action="/signDoctor" class="form" method="post">
+          <h1 class="title">Sign up</h1>
+
+          <label for="Speciality" style="font-size: 1.5rem;">Speciality:</label><br>
+          <select class="inputContainer choice" name="speciality" required>
+              <option disabled selected>Select</option>
+              <option class="options" value="cardiologists">Cardiologists</option>
+              <option class="options" value="gynecologists">gynecologists</option>
+              <option class="options" value="Dermatologists">Dermatologists</option>
+              <option class="options" value="Ophthalmologists">Ophthalmologists</option>
+              <option class="options" value="Endocrinologists">Endocrinologists</option>
+              <option class="options" value="Neurologists">Neurologists</option>
+              <option class="options" value="Gastroenterologists">Gastroenterologists</option>
+              <option class="options" value="Nephrologists">Nephrologists</option>
+              <option class="options" value="Allergists">Allergists</option>
+              <option class="options" value="other">Other</option>
+          </select>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="name" required>
+            <label for="" class="label">Name</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="phone" required>
+            <label for="" class="label">Contact Number</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="timings" required>
+            <label for="" class="label">Timings</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="address" required>
+            <label for="" class="label">Address</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="degree" required>
+            <label for="" class="label">Degree</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="registrationNo" required>
+            <label for="" class="label">Registration Number</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="description" required>
+            <label for="" class="label">Description</label>
+          </div>
+
+
+          <div class="inputContainer">
+            <input type="email" class="input" placeholder="a" name="email" required>
+            <label for="" class="label">Email</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="password" class="input" placeholder="a" name="password" required>
+            <label for="" class="label">Password</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="password" class="input" placeholder="a" name="repassword" required>
+            <label for="" class="label">Confirm Password</label>
+          </div>
+
+          <input type="submit" class="submitBtn" value="Sign up">
+        </form>
+
+
+      </div>
+
+</body>
+</html>

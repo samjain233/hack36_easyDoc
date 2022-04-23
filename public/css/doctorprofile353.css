@@ -1,0 +1,142 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    font-family: cursive;
+    height: 110vh;
+    background-color: white;
+    background-color: #EFFFFD;
+    margin: 20px;
+}
+
+html{
+    height: 110vh;
+}
+/* information spans */
+.info{
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+
+/* navbar custamisation */
+.navbar{
+    background-color: #78bfe7;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav-item{
+    margin-right: 20px;
+    font-size: 1.3rem;
+  }
+  .nav-item:hover{
+      background-color: rgb(176, 171, 171);;
+  }
+  .nav-link{
+    cursor: pointer;
+  }
+  .operands{
+    cursor: pointer;
+  }
+  .active{
+    background-color: rgb(182, 177, 177);
+    padding: auto 20px;
+    border-radius: 3mm;
+
+  }
+
+/* number divs */
+
+.num1{
+    position: relative;
+    float: right;
+    background-color: #78bfe7;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 3mm;
+}
+
+.num2{
+    position: relative;
+    float: right;
+    background-color: #78bfe7;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 3mm;
+}
+/* expected time div */
+.exptime{
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    background-color: #78bfe7;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: 20px 20px;
+    border: 10px solid rgb(176, 171, 171);
+    border-radius: 3mm;
+}
+/* register button */
+.register{
+    float: right;
+    margin-top: 80px;
+    position: relative;
+    margin-right: 40px;
+    color: #fff;
+    background-color: #78bfe7;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 10px 20px;
+    cursor:pointer;
+    border-radius: 3mm;
+    border: 10px solid rgb(176, 171, 171);
+}
+
+/* main container */
+.Container{
+  display: block;
+  width: 90%;
+  align-items: center;
+  margin-right: 10%;
+}
+
+/* image */
+.docpic{
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    border-radius: 20%;
+}
+
+/* columns */
+.Col{
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgb(176, 171, 171);
+  border-radius: 20%;
+}
+
+footer{
+  text-align: left;
+  margin-right: 0px;
+}
+@media screen and (max-width: 600px) {
+  .Container{
+    display: inline;
+  }
+  .Row{
+    display: flex;
+    flex-direction: column;
+  }
+}

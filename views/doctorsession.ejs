@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Portal</title>
+    <script src="https://kit.fontawesome.com/42d50a4c3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/doctorsession56.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="/doctor/prescriptiondoctor">more details</a>
+        <a href="/doctor">End session</a> 
+    </div>
+
+    <!-- <div class="sidebar"> -->
+        <div class="content">
+            <div class="row1">
+                <div class="col">
+                    <br><span class="dot" style="background-color: white;"><%=currNum%></span>
+                    <span class="icon"><i class="fa-solid fa-hospital-user"></i></span><span class="info"><%=userName%></span><br>
+                    <div class="etc">
+                    <span >Age : </span>
+                    <span ><%=age%></span><br>
+                    </div>
+                </div>
+                
+                <div class="row2">
+                    <form action="/Doctor/docsession" method="post" class="signupFrm">
+                       <br><h1>Description:</h1><br>
+                        <textarea name="Description"></textarea>
+                        <button type="submit" name="user_ID" value="<%=user_ID%>" id="time">Next</button>
+                    </form>
+            </div>
+            
+                
+            </div>
+        </div>
+        <script src="./scripts/doctorsession45.js"></script>
+</body>
+</html>

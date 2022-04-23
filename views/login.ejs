@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/42d50a4c3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/login163.css">
+</head>
+
+<body>
+  <h2>Choose Account Type</h2>
+    <div class="signupFrm">
+        <form action="/login" method="post" class="form">
+          <div class="option">
+            <input class="doctor" type="radio" name="option" value="0" required><img src="./images/doctor_login.png" alt="doctor" style="height: 190px; width: 190px;">
+            <input class="patient" type="radio" name="option" value="1" ><img src="./images/patient_login.png" alt="doctor" style="height: 190px; width: 190px;">
+          </div>
+
+          <h3>Hello Doctor!<br>Please fill out the form below to get started</h3>
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="email" required>
+            <label for="" class="label">Email</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="password" class="input" placeholder="a" name="password" required>
+            <label for="" class="label">Password</label>
+          </div>
+
+          <input type="submit" class="submitBtn" value="Login">
+          <h4>OR</h4>
+          <button class="google"><i class="fa-brands fa-google"></i>Sign in with google</button>
+          <button class="google" style="color: black;">forgot password?</button>
+          <button class="google" style="color: black;">Don't have an account?<span style="color: #78bfe7; text-decoration: underline;">  Sign up</span></button>
+        </form>
+      </div>
+
+</body>
+</html>

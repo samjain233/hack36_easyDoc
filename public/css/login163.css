@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Updock&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+/* font-family: 'Updock', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.bgimg{
+    width: 100vw;
+}
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+  color: #78bfe7;
+}
+h2{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+h4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+h4:before, h4:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+}
+.signUp{
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.option{
+  display: flex;
+}
+.doctor,.patient{
+  cursor: pointer;
+  margin: 10px;
+}
+/* Puts the form in the center both horizontally and vertically. Sets its height to 100% of the viewport's height */
+*{
+    padding: 0;
+    margin: 0;
+}
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+  }
+
+  .form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  } 
+
+  /* Style the inputs */
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  
+  ::placeholder {
+    color: transparent;
+  }
+  
+  /* Styling text labels */
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #38b3ea;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #7ed2fc;
+    transform: translateY(-2px);
+  }
+  .google{
+    width: 100%;
+    color: #3cb4dd;
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .fa-google{
+    margin-right: 15px;
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #38b3ea;
+  }
+  .input:focus {
+    border: 2px solid #38b3ea;
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
