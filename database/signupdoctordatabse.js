@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //mongodb-----------------------------------------------------------------------------------------------------
-mongoose.connect("mongodb+srv://sam233:42119243Sam@cluster0.bgt3y.mongodb.net/hack36", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/usersHack36", {useNewUrlParser: true});
 
 const doctorSchema = new mongoose.Schema({
     speciality: String,

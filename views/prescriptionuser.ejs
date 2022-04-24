@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user portal</title>
-    <link rel="stylesheet" href="./css/styleuser897.css">
+    <link rel="stylesheet" href="./css/prescriptionuser.css">
     <link href="//db.onlinewebfonts.com/c/261506be3344b3806eefa054f0f6fbf1?family=Tempus+Sans+ITC" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <nav>
         <div class="logo"><a href="#"><%=email%></a></div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/user">Home</a></li>
             <li><a href="/User/docsearch">Doctors</a>
              <div class="sub-menu-1">
                  <ul>
@@ -29,16 +29,18 @@
                  </ul>
              </div>
             </li>
-            <li><a href="/user/prescriptionuser">Prescriptions</a></li>
+            <li><a href="#">Prescriptions</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="/logout">Logout</a></li>
 
         </ul>
     </nav>
 
-    <div class="intro">
-        <h1>Welcome</h1>
-        <p>Fix an appointment now at the ease of your home.</p>
+    <div class="press"><h1 class="pres">Your Prescriptions</h1>
+        <% prescription.forEach(function(item){ %>
+    <div class="preslist"><%=item.Prescription%></div>
+    <% }); %>
+
     </div>
 
 </body>

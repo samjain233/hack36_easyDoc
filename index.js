@@ -16,6 +16,7 @@ const userHome = require("./routes/userhome");
 const doctorHome = require("./routes/doctorHome");
 const registereduser = require("./routes/registeredUser");
 const prescriptionDoctor = require("./routes/prescriptiondoctor");
+const prescriptionuser = require("./routes/prescriptionuser");
 const api = require("./routes/api/currentNum");
 const apitime = require("./routes/api/time");
 //const UserInfoError = require("passport-google-oauth20/lib/errors/userinfoerror");
@@ -45,6 +46,7 @@ app.use("/user",userHome);
 app.use("/doctor",doctorHome);
 app.use("/User",registereduser);
 app.use("/doctor",prescriptionDoctor);
+app.use("/user",prescriptionuser);
 app.use("/api",api);
 app.use("/api",apitime);
     
